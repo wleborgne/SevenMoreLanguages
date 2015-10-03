@@ -1,0 +1,18 @@
+#IncludeRegexLine: ^[ 	]*#[ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/Users/williamleborgne/workspace/ComvergeBookClub/SevenMoreLanguages/Lua/Day3/play.cpp
+lua.h
+/Users/williamleborgne/workspace/ComvergeBookClub/SevenMoreLanguages/Lua/Day3/lua.h
+lauxlib.h
+/Users/williamleborgne/workspace/ComvergeBookClub/SevenMoreLanguages/Lua/Day3/lauxlib.h
+lualib.h
+/Users/williamleborgne/workspace/ComvergeBookClub/SevenMoreLanguages/Lua/Day3/lualib.h
+RtMidi.h
+/Users/williamleborgne/workspace/ComvergeBookClub/SevenMoreLanguages/Lua/Day3/RtMidi.h
+
