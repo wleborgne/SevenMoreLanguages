@@ -39,7 +39,8 @@ int main(int argc, const char* argv[])
    lua_pushcfunction(L, midi_send);
    lua_setglobal(L, "midi_send");
 
-   luaL_dofile(L, argv[1]);
+   luaL_dofile(L, argv[1]); // returns a code based on success/failure of Lua file
+   // Actual error message pushed onto stack and pointed to by lua_state*
 
    lua_close(L);
    return 0;
