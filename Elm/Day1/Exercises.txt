@@ -1,0 +1,34 @@
+Easy
+
+Function to compute the product of a list of numbers:
+
+> listProduct list = \
+|   case list of \
+|     [] -> 1 \
+|     head::tail -> head * listProduct tail
+<function> : List number -> number
+
+Bug?: For an empty list, this returns 1
+
+Function to return all 'x' fields from a list of point records
+
+Record to describe a 'person', containing 'name', 'age', 'address', where
+'address' is also a record.
+
+
+Medium
+
+Function called multiply
+> multiply x y = x * y
+<function> : number -> number -> number
+
+Currying to express 6 * 8
+> (multiply 6) 8
+48 : number
+
+Function to find all people in a list of 'person' older than 16
+
+
+Hard
+
+Last Medium exercis as above, but must allow records where 'age' is nothing.
