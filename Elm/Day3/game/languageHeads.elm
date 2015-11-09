@@ -36,7 +36,7 @@ headImage n =
 bottom = 550
 
 secsPerFrame = 1.0 / 5.0
-delta = inSeconds <~ fps 50
+delta = inSeconds <~ fps 30
 input = sampleOn delta (Input <~ Keyboard.space
                                ~ Mouse.x
                                ~ delta)
@@ -129,12 +129,12 @@ display ({state, heads, player, seed} as game) =
 
 drawRoad w h =
   filled gray (rect (toFloat w) 100)
-  |> moveY (-(half w) + 50)
+  |> moveY (-(half h) + 50)
 
 drawBuilding w h =
   filled red (rect 100 (toFloat h))
-  |> moveY (-(half w) + 50)
-  
+  |> moveX (-(half w) + 50)
+
 drawHeads w h heads = List.map (drawHead w h) heads
 
 drawHead w h head =
